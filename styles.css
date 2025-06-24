@@ -1,0 +1,78 @@
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.page-wrapper {
+  width: 100%;
+  padding: 0 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+li :hover{
+    opacity: 0.7;
+}
+
+.bird {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.profile-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 16px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.article-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* 
+- ヘッダーのメニュー部分（ProfileとArticle）は2つのメニューが**24px**間隔です。
+- 2つのメニューは、ホバーした時に**不透明度を0.7**にします。
+- メインビジュアル（鳥の画像）は、幅は**親要素の100%**、高さは**640px**、角の丸め半径は**16px**です。
+- ProfileセクションとArticleセクションは、「タイトル部分」と「内容部分」が**40pxの間隔で縦並び**になっています。
+- Profileセクションは、「画像部分」と「文章部分」が**40pxの間隔で横並び**になっており、「文章部分」は「名前部分」と「説明部分」が**16pxの間隔で縦並び**になっています。
+- Articleセクションは、記事が**縦方向に40px、横方向に16pxの間隔で格子状**に並んでおり、各記事は「画像部分」と「タイトル部分」と「内容部分」が**8pxの間隔で縦並び**になっています。
+- フッターは、上下のpaddingが**40px、font-sizeはsmall**です。*/

@@ -7,25 +7,82 @@
   <meta name="description" content="自己紹介サイトです。" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSSファイルの適用 -->
-  
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
   <div class="page-wrapper">
     <!-- ヘッダー -->
+    <header class="header">
+      <img src="./img/logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="#Profile">Profile</a>
+          <a href="#Articles">Articles</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="main-content">
       <!-- メインビジュアル -->
-
+      <img class="bird" src="./img/main_visual.jpg" alt="piyopiyo">
       <!-- プロフィール セクション -->
+      <section class="section" id="Profile">
+        <h2 class="section-title">Profile</h2>
+        <div class="profile">
+          <img class="profile-image" src="./img/profile.png" alt="human">
+          <div class="profile-info">
+            <h3>NAOYA IWASAKI</h3>
+            <p>
+            Origin:Fukushima Nihppon<br>
+            Hobby: Workout, craftbeer<br>
+            Tech.: Nothing, expcte to the future<br>
+            Task: R&D in seasoning industry</p>
+        </div>
+      </section>
 
       <!-- 記事 セクション -->
-
+       <section class="section" id="Articles">
+        <h2 class="section-title">Articles</h2>
+        <div class="articles">
+          <div class="article">
+            <img class="article-image" src="./img/article.jpg" alt="a cup of coffee">
+            <h3 class="article-title">記事のタイトル</h3>
+            <p>こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。</p>
+          </div>
+          <div class="article">
+            <img class="article-image" src="./img/article.jpg" alt="a cup of coffee">
+            <h3 class="article-title">記事のタイトル</h3>
+            <p>こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。</p>
+          </div>
+          <div class="article">
+            <img class="article-image" src="./img/article.jpg" alt="a cup of coffee">
+            <h3 class="article-title">記事のタイトル</h3>
+            <p>こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。</p>
+          </div>
+          <div class="article">
+            <img class="article-image" src="./img/article.jpg" alt="a cup of coffee">
+            <h3 class="article-title">記事のタイトル</h3>
+            <p>こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。こんな記事を書きました。</p>
+          </div>
+       </section>
     </main>
 
     <!-- フッター -->
+     <foote>
+      <p>&copy; 2025 Practice HP All rights reserved. </p>
+     </foote>
 
   </div>
 </body>
 
 </html>
+
+<!-- 
+- ヘッダーのメニュー部分（ProfileとArticle）は2つのメニューが**24px**間隔です。
+- 2つのメニューは、ホバーした時に**不透明度を0.7**にします。
+- メインビジュアル（鳥の画像）は、幅は**親要素の100%**、高さは**640px**、角の丸め半径は**16px**です。
+- ProfileセクションとArticleセクションは、「タイトル部分」と「内容部分」が**40pxの間隔で縦並び**になっています。
+- Profileセクションは、「画像部分」と「文章部分」が**40pxの間隔で横並び**になっており、「文章部分」は「名前部分」と「説明部分」が**16pxの間隔で縦並び**になっています。
+- Articleセクションは、記事が**縦方向に40px、横方向に16pxの間隔で格子状**に並んでおり、各記事は「画像部分」と「タイトル部分」と「内容部分」が**8pxの間隔で縦並び**になっています。
+- フッターは、上下のpaddingが**40px、font-sizeはsmall**です。-->
